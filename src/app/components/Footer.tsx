@@ -4,21 +4,21 @@ import logo from "@/app/assets/Logo.png";
 
 const Footer = () => {
   return (
-    <footer className="w-[1920px] h-[461px] bg-[#043873] text-white py-[140px] px-[220px]">
-      <div className="flex justify-around items-center gap-[20px]">
+    <footer className="w-full bg-[#043873] text-white py-[60px] px-[20px] lg:py-[140px] lg:px-[220px]">
+      <div className="flex flex-wrap lg:flex-nowrap justify-around items-start lg:items-center gap-10 lg:gap-[20px]">
         {/* Logo and Description */}
-        <div className='flex justify-center'>
-            <div className='w-4/12 text-justified leading-8 gap-15px'>
-		<Image src={logo} alt='logo' width={191} height={34} />
-          <p className="text-sm leading-relaxed font-sans text-[18px] font-normal leading-[30px] tracking-[-0.02em] text-left underline decoration-slice">
-            Whitepace was created for the new ways we live and work. 
-            We make a better workspace around the world.
-          </p>
+        <div className="flex justify-center w-full lg:w-auto">
+          <div className="w-full lg:w-6/12 text-justify leading-8">
+            <Image src={logo} alt="logo" width={191} height={34} />
+            <p className="text-sm leading-relaxed font-sans text-[16px] lg:text-[18px] font-normal leading-[24px] lg:leading-[30px] tracking-[-0.02em] text-left underline decoration-slice mt-4">
+              Whitepace was created for the new ways we live and work. 
+              We make a better workspace around the world.
+            </p>
           </div>
         </div>
 
         {/* Product Links */}
-        <div>
+        <div className="w-full lg:w-auto text-center lg:text-left">
           <h2 className="text-lg font-semibold mb-4">Product</h2>
           <ul className="space-y-2">
             <li><a href="#" className="hover:text-gray-300">Overview</a></li>
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
 
         {/* Resources Links */}
-        <div>
+        <div className="w-full lg:w-auto text-center lg:text-left">
           <h2 className="text-lg font-semibold mb-4">Resources</h2>
           <ul className="space-y-2">
             <li><a href="#" className="hover:text-gray-300">Blog</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         {/* Company Links */}
-        <div>
+        <div className="w-full lg:w-auto text-center lg:text-left">
           <h2 className="text-lg font-semibold mb-4">Company</h2>
           <ul className="space-y-2">
             <li><a href="#" className="hover:text-gray-300">About us</a></li>
